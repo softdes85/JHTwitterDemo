@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/JH.TwitterDemo.Api/.vs/JH.TwitterDemo.Api/v17
+/JH.TwitterDemo.Api/obj
+/JH.TwitterDemo.Service/obj
+/JH.TwitterDemo.Data/obj
