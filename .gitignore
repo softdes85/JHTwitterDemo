@@ -7,3 +7,10 @@
 /JH.TwitterDemo.Api/obj
 /JH.TwitterDemo.Service/obj
 /JH.TwitterDemo.Data/obj
+/Infraestructure/JH.TwitterDemo.Infrastructure.TwitterClient/bin/Debug/netcoreapp3.1
+/Infraestructure/JH.TwitterDemo.Infrastructure.TwitterClient/obj
+/JH.TwitterDemo.Api/bin/Debug/netcoreapp3.1
+/JH.TwitterDemo.Data/bin/Debug/netcoreapp3.1
+/JH.TwitterDemo.Service/bin/Debug/netcoreapp3.1
+/Tests/JH.TwitterDemo.Tests/obj/Debug/netcoreapp3.1
+/Tests/JH.TwitterDemo.Tests/obj

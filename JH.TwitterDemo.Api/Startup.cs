@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JH.TwitterDemo.Api.Configuration;
+using System.Reflection;
 
 namespace JH.TwitterDemo.Api
 {
@@ -25,6 +27,8 @@ namespace JH.TwitterDemo.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.SetApiConfiguration(this.Configuration);
+            services.AddSwaggerGen();
             services.AddControllers();
         }
 
@@ -35,6 +39,11 @@ namespace JH.TwitterDemo.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", Assembly.GetExecutingAssembly().GetName().Name);
+            });
 
             app.UseHttpsRedirection();
 

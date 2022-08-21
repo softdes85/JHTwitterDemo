@@ -1,13 +1,13 @@
 ﻿using JH.TwitterDemo.Data.Entities;
-using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace JH.TwitterDemo.Data.Repositories.Interfaces
 {
-    public interface IRepository<T> where T : IEntity
+    public interface IRepository<TEntity> where TEntity: class, IEntity
     {
-        void Add(T entity);
-        T Get(string Id);
+        Task<TEntity> GetAsync(int id);
+        Task<IEnumerable<TEntity>> GetAllAsync();
+        void Add(TEntity entity);
     }
 }
